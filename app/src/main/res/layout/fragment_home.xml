@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationId"
+                android:layout_marginTop="30dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:lottie_fileName="nointernetconnection.json"
+                app:lottie_autoPlay="true"
+                android:layout_centerHorizontal="true"
+                android:scrollbarSize="40dp"
+                app:lottie_loop="true"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonId"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/animationId"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text="Retry"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mainactivity"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:id="@+id/linearid2"
+                android:gravity="bottom|center"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="20dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/bangldeshCardId"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom|center">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/bangladesh"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="বাংলাদেশ"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/internationalCardId"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom|center">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_marginTop="0dp"
+                                android:layout_width="95dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                app:lottie_fileName="global_news_2.json"
+                                app:lottie_autoPlay="true"
+                                android:scrollbarSize="40dp"
+                                app:lottie_loop="true"
+                                />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="আন্তর্জাতিক"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/campusCardId"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom|center">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_marginTop="0dp"
+                                android:layout_width="95dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                app:lottie_fileName="campus.json"
+                                app:lottie_autoPlay="true"
+                                android:scrollbarSize="40dp"
+                                app:lottie_loop="true"
+                                />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ক্যাম্পাস"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/educationCardId"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom|center">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_marginTop="0dp"
+                                android:layout_width="95dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                app:lottie_fileName="education_2.json"
+                                app:lottie_autoPlay="true"
+                                android:scrollbarSize="40dp"
+                                app:lottie_loop="true"
+                                />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="শিক্ষা"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sportsCardId"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom|center">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_marginTop="0dp"
+                                android:layout_width="95dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                app:lottie_fileName="sports.json"
+                                app:lottie_autoPlay="true"
+                                android:scrollbarSize="40dp"
+                                app:lottie_loop="true"
+                                />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="খেলাধুলা"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/jobCardId"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom|center">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_marginTop="0dp"
+                                android:layout_width="95dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                app:lottie_fileName="job.json"
+                                app:lottie_autoPlay="true"
+                                android:scrollbarSize="40dp"
+                                app:lottie_loop="true"
+                                android:layout_marginBottom="5dp"
+                                />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="চাকরি"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/scienceCardId"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom|center">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_marginTop="0dp"
+                                android:layout_width="95dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                app:lottie_fileName="science.json"
+                                app:lottie_autoPlay="true"
+                                android:scrollbarSize="40dp"
+                                app:lottie_loop="true"
+                                />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="বিজ্ঞান ও প্রযুক্তি"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/viralCardId"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom|center">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_marginTop="0dp"
+                                android:layout_width="95dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                app:lottie_fileName="viral.json"
+                                app:lottie_autoPlay="true"
+                                android:scrollbarSize="40dp"
+                                app:lottie_loop="true"
+                                android:layout_marginBottom="5dp"
+                                />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ভাইরাল"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="55dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/othersCardId"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardElevation="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="bottom|center">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_marginTop="0dp"
+                                android:layout_width="95dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                app:lottie_fileName="expand_2.json"
+                                app:lottie_autoPlay="true"
+                                android:scrollbarSize="40dp"
+                                app:lottie_loop="true"
+                                />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="অন্যান্য"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
