@@ -15,3 +15,6 @@ Main Activity
 Menu Option
 -------
 <img src="https://user-images.githubusercontent.com/49723335/122823607-681b9c00-d301-11eb-9302-ba38d9320a9c.jpg" height="400" />
+
+Splash Screen | Main Activity | Menu Option
+--------------|:--------------|:---------:|
