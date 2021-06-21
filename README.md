@@ -5,7 +5,7 @@ Feature
 It's a normal android application. Student Journal website is intragated in this app using webview.
 
 Splash Screen
-![Screenshot_20210622_021319_com example studentjournal](https://user-images.githubusercontent.com/49723335/122823548-520ddb80-d301-11eb-9385-b342da3e2a48.jpg)
+
 <img src="https://user-images.githubusercontent.com/49723335/122823548-520ddb80-d301-11eb-9385-b342da3e2a48.jpg" height="400" />
 
 Main Activity
